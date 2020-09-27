@@ -77,7 +77,15 @@ $DB_DATABASE = "crudexample"; //Data base name
 	        implementation 'com.github.jkantech:crud:1.0.2'
 		}
  ```
+ ### Manifests
+```xml
+    <uses-permission android:name="android.permission.INTERNET"/>
 
+<application
+
+        android:usesCleartextTraffic="true"
+
+```
 
 ### Sample Kotlin Usage 
 
