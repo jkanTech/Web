@@ -6,7 +6,7 @@
 ## Download and Import
 ## PHP API
 
-Dolowndod from [here](https://github.com/jkanTech/crud/raw/master/api/api.zip).
+Download from [here](https://github.com/jkanTech/crud/raw/master/api/api.zip).
 
 
 #### Android Studio/Gradle
