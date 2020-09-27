@@ -56,7 +56,7 @@ Download from [here](https://github.com/jkanTech/crud/raw/master/api/api.zip).
  4. Open the config.php file
  5. Put the database username, password and database name
  
-  ```config.php
+  ```php
   <?php
 $DB_USER = "root";//Data base user
 $DB_PASS = "root"; // Date base user pass
@@ -81,9 +81,7 @@ $DB_DATABASE = "crudexample"; //Data base name
 
 ### Sample Kotlin Usage 
 
-```activity.kt
-
-
+```kotlin
 private fun getUsers(){
 //get : table,condition
  val crud=Crud(this,"http://192.168.8.101/api/query/v1/")
@@ -110,8 +108,9 @@ private fun getUsers(){
 	}
 
 ```
+#### Update
 
-```
+```kotlin
  private fun updateUser(id:Int,name:String,first_name:String,email:String){
         val data=JSONObject()
         val conds=JSONObject()
