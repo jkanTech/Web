@@ -85,10 +85,11 @@ $DB_DATABASE = "crudexample"; //Data base name
 
 
 private fun getUsers(){
+//get : table,condition
+ val crud=Crud(this,"http://192.168.8.101/api/query/v1/")
 
         //Get Users with where condition
-        
-
+      
         val conds=JSONObject()
         try {
             conds.put("id",2)
@@ -106,6 +107,7 @@ private fun getUsers(){
             }
 
         })
+	}
 
 ```
 
