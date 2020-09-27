@@ -83,6 +83,30 @@ $DB_DATABASE = "crudexample"; //Data base name
 
 ```activity.kt
 
+
+private fun getUsers(){
+
+        //Get Users with where condition
+        
+
+        val conds=JSONObject()
+        try {
+            conds.put("id",2)
+
+        }catch (e:JSONException){
+            e.printStackTrace()
+        }
+        crud.get("users", conds, object : OnResponseListener{
+            override fun onError(error: String?) {
+                TODO("Not yet implemented")
+            }
+
+            override fun onResponse(response: String?) {
+                TODO("Not yet implemented")
+            }
+
+        })
+
 ```
 
 <h2 id="examples">Examples :eyes:</h2>
