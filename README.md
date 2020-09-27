@@ -88,6 +88,28 @@ $DB_DATABASE = "crudexample"; //Data base name
 ```
 
 ### Sample Kotlin Usage 
+#### Get All
+
+```kotlin
+ private fun getAll(){
+  val crud=Crud(this,"http://192.168.8.101/api/query/v1/")
+
+        
+        crud.get("users",null,object :OnResponseListener{
+            override fun onError(error: String?) {
+                toastMessage(requireContext(),"Error")
+
+            }
+
+            //on response
+            override fun onResponse(response: String?) {
+                toastMessage(requireContext(),response.toString())
+            }
+
+        })
+    }
+
+```
 
 ```kotlin
 private fun getUsers(){
