@@ -83,7 +83,6 @@ $DB_DATABASE = "crudexample"; //Data base name
 
 Download the [Crud Example App]() or look at the [source code](https://github.com/jkanTech/crud/tree/master/CrudExample).
 
-[![ScreenShot](https://github.com/PhilJay/MPAndroidChart/blob/master/design/video_thumbnail.png)](https://www.youtube.com/watch?v=ufaK_Hd6BpI)
 
 <br/>
  
