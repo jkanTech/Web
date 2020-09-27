@@ -79,6 +79,12 @@ $DB_DATABASE = "crudexample"; //Data base name
  ```
 
 
+### Sample Kotlin Usage 
+
+```activity.kt
+
+```
+
 <h2 id="examples">Examples :eyes:</h2>
 
 Download the [Crud Example App]() or look at the [source code](https://github.com/jkanTech/crud/tree/master/CrudExample).
