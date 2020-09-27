@@ -50,6 +50,10 @@ Download from [here](https://github.com/jkanTech/crud/raw/master/api/api.zip).
  ```
  ## Usage
  
+ 1. Download the latest version of the API
+ 2. Unzip it in your server directory
+ 3. 
+ 
 
  
 ## Authors
