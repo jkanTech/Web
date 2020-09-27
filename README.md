@@ -84,6 +84,7 @@ $DB_DATABASE = "crudexample"; //Data base name
 ```kotlin
 private fun getUsers(){
 //get : table,condition
+
  val crud=Crud(this,"http://192.168.8.101/api/query/v1/")
 
         //Get Users with where condition
@@ -112,6 +113,8 @@ private fun getUsers(){
 
 ```kotlin
  private fun updateUser(id:Int,name:String,first_name:String,email:String){
+  val crud=Crud(this,"http://192.168.8.101/api/query/v1/")
+
         val data=JSONObject()
         val conds=JSONObject()
         try {
@@ -129,13 +132,13 @@ private fun getUsers(){
         }
         crud.set("users",data,conds,object :OnResponseListener{
             override fun onError(error: String?) {
-                toasMessage(requireContext(),"Error")
+                toastMessage(requireContext(),"Error")
 
             }
 
             //on response
             override fun onResponse(response: String?) {
-                toasMessage(requireContext(),response.toString())
+                toastMessage(requireContext(),response.toString())
             }
 
         })
