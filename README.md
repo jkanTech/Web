@@ -56,7 +56,7 @@ Download from [here](https://github.com/jkanTech/crud/raw/master/api/api.zip).
  4. Open the config.php file
  5. Put the database username, password and database name
  
-  ```groovy
+  ```config.php
   <?php
 $DB_USER = "root";//Data base user
 $DB_PASS = "root"; // Date base user pass
