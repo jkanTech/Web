@@ -45,7 +45,7 @@ Download from [here](https://github.com/jkanTech/crud/raw/master/api/api.zip).
     }
 	
     dependencies {
-	        implementation 'com.github.jkanTech:Crud:1.0.2'
+	        implementation 'com.github.jkantech:crud:1.0.2'
           }
  ```
  
