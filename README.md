@@ -56,7 +56,7 @@ Download from [here](https://github.com/jkanTech/crud/raw/master/api/api.zip).
  4. Open the config.php file
  5. Put the database username, password and database name
  
-  ```confing.php
+  ```groovy
   <?php
 $DB_USER = "root";//Data base user
 $DB_PASS = "root"; // Date base user pass
@@ -64,6 +64,19 @@ $DB_DATABASE = "crudexample"; //Data base name
    
   ```
    
+### Android Studio
+
+ ```groovy
+    repositories {
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+	
+    dependencies {
+	        implementation 'com.github.jkantech:crud:1.0.2'
+		}
+ ```
 
  
 ## Authors
