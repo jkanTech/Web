@@ -52,8 +52,18 @@ Download from [here](https://github.com/jkanTech/crud/raw/master/api/api.zip).
  
  1. Download the latest version of the API
  2. Unzip it in your server directory
- 3. 
+ 3. Go to the api/query/v1/database folder
+ 4. Open the config.php file
+ 5. Put the database username, password and database name
  
+  ```confing.php
+  <?php
+$DB_USER = "root";//Data base user
+$DB_PASS = "root"; // Date base user pass
+$DB_DATABASE = "crudexample"; //Data base name
+   
+  ```
+   
 
  
 ## Authors
