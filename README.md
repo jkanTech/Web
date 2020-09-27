@@ -111,6 +111,42 @@ private fun getUsers(){
 
 ```
 
+```
+ private fun updateUser(id:Int,name:String,first_name:String,email:String){
+        val data=JSONObject()
+        val conds=JSONObject()
+        try {
+            //Condition
+            conds.put("id",id)
+
+            //Rows and Values
+            data.put("user_name",name)
+            data.put("first_name",first_name)
+            data.put("user_email",email)
+
+
+        }catch (e:JSONException){
+            e.printStackTrace()
+        }
+        crud.set("users",data,conds,object :OnResponseListener{
+            override fun onError(error: String?) {
+                toasMessage(requireContext(),"Error")
+
+            }
+
+            //on response
+            override fun onResponse(response: String?) {
+                toasMessage(requireContext(),response.toString())
+            }
+
+        })
+    }
+
+```
+
+
+
+
 <h2 id="examples">Examples :eyes:</h2>
 
 Download the [Crud Example App]() or look at the [source code](https://github.com/jkanTech/crud/tree/master/CrudExample).
